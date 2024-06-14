@@ -1,0 +1,271 @@
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+/* Containers */
+#main-container {
+  display: flex;
+  margin-top: 32px;
+  padding-bottom: 32px;
+  justify-content: center;
+}
+
+#banner-container {
+  height: 581.15px;
+  margin-bottom: 12px;
+  background-size: 468.32px 634.15px;
+  background-image: url('../img/banner2.png');
+  align-self: center;
+  margin-right: 32px;
+  flex-basis: 380.32px;
+  margin-top: 55px;
+  background-position: -46px 0;
+}
+
+.screenshots{
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 25px;
+  width: 250px;
+  height: 538.84px;
+}
+ 
+/* LOGIN FORM */
+#form-container{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 70px;
+  max-width: 350px;
+}
+
+#form-box {
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  width: 350px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#logo-insta {
+  width: 175px;
+  height: 51px;
+  margin: 40px auto 12px;
+}
+
+#login-form {
+  margin-top: 20px;
+}
+
+#login-form input {
+  display: block;
+  font-size: 12px;
+  padding: 12px 9px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  width: 268px;
+  margin: 5px auto;
+}
+
+#login-form input[type="submit"] {
+  background-color: #3591ce;
+  color: #fff;
+  margin-top: 15px;
+  border-radius: 8px;
+  height: 35px;
+  font-size: 13px;
+  padding: 0;
+  font-weight: bold;
+}
+
+/* Separator */
+.separator {
+  position: relative;
+}
+
+.line {
+  border-top: 1px solid #dbdbdb;
+  width: 268px;
+  margin: 25px auto 35px;
+}
+
+.separator span {
+  position: absolute;
+  color: #505050;
+  background-color: #fff;
+  top: -6px;
+  width: 50px;
+  margin-left: -25px;
+  font-size: 14px;
+}
+
+/* other logins */
+#facebook-login {
+  margin-bottom: 25px;
+}
+
+#facebook-login a {
+  text-decoration: none;
+  color: #385185;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#facebook-login img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+#facebook-login span {
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 1px;
+}
+
+/* Forgot Password */
+#forgot-password {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+#forgot-password a {
+  text-decoration: none;
+  color: #505050;
+}
+
+/* Register Container */
+#register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  width: 350px;
+  height: 40px;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+#register-container p {
+  font-size: 14px;
+  color: #262626;
+  margin-right: 5px;
+}
+
+#register-container a {
+  color: #4a95f6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Get app container */
+#get-app-container {
+  text-align: center;
+  width: 350px;
+}
+#get-app-container p {
+  font-size: 14px;
+  color: #262626;
+  margin: 20px 0;
+}
+#get-app-container a {
+  text-decoration: none;
+}
+
+#get-app-container img {
+  width: 136px;
+  height: 40px;
+}
+
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer #footer-links {
+  display: flex;
+  list-style: none;
+}
+
+#footer-links li {
+  margin-right: 10px;
+}
+
+#footer-links a,
+#copyright {
+  text-decoration: none;
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+#copyright {
+  margin-top: 10px;
+}
+/* TABLET */
+@media (max-width: 850px) {
+  #banner-container {
+    display: none;
+  }
+
+  #main-container,
+  #form-box {
+    margin-top: 50px;
+  }
+
+  #form-container,
+  #form-box,
+  #register-container,
+  #get-app-container {
+    margin: 10px auto;
+  }
+
+  #footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #footer-links {
+    margin-bottom: 10px;
+  }
+}
+/* MOBILE */
+@media (max-width: 450px) {
+  #banner-container {
+    display: none;
+  }
+
+  #main-container,
+  #form-box {
+    margin-top: 0;
+  }
+
+  #form-container,
+  #form-box,
+  #register-container,
+  #get-app-container {
+    width: 100%;
+    border: none;
+  }
+
+  #footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #footer-links {
+    margin-bottom: 10px;
+  }
+}
